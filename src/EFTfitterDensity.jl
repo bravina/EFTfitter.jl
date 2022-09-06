@@ -9,7 +9,7 @@ struct _NuisanceCorrelation
 end
 
 
-struct EFTfitterDensity <: AbstractMeasureOrDensity
+struct EFTfitterDensity <: AnyMeasureOrDensity
     measured_values::Vector{Float64}
     observable_functions::Vector{Function}
     observable_uncfunctions::Vector{Function}
@@ -19,7 +19,7 @@ struct EFTfitterDensity <: AbstractMeasureOrDensity
     check_bounds::Bool
 end
 
-struct EFTfitterDensityNuisance <: AbstractMeasureOrDensity
+struct EFTfitterDensityNuisance <: AnyMeasureOrDensity
     measured_values::Vector{Float64}
     observable_functions::Vector{Function}
     observable_mins::Vector{Float64}
