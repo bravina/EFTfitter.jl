@@ -112,7 +112,7 @@ end
 
 
 
-function BAT.eval_logval_unchecked(
+function DensityInterface.logdensityof(
     m::EFTfitterDensity,
     params
 )
@@ -136,7 +136,7 @@ function BAT.eval_logval_unchecked(
 end
 
 
-function BAT.eval_logval_unchecked(
+function DensityInterface.logdensityof(
     m::EFTfitterDensityNuisance,
     params
 )
